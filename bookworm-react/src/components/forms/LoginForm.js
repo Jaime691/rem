@@ -38,6 +38,8 @@ class LoginForm extends Component {
 
   render() {
     const { data, errors } = this.state;
+    console.log(errors);
+
     return (
       <form onSubmit={this.onSubmit}>
         {errors.global && <InlineError text="Algo fue mal" />}

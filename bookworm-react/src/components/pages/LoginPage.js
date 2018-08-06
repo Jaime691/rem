@@ -8,9 +8,8 @@ import LoginForm from '../forms/LoginForm';
 class LoginPage extends Component {
   state = {};
 
-  submit = data => {
+  submit = data =>
     this.props.login(data).then(() => this.props.history.push('/'));
-  };
 
   render() {
     return (
